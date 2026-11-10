@@ -1,0 +1,18 @@
+/* Independent Gemini artwork for each chapter. */
+.scene--gate,.scene--walk,.scene--welcome,.scene--lulu,.scene--hall,.scene--crown,.scene--letter,.scene--final{background-size:cover;background-position:center;background-repeat:no-repeat}
+.scene--gate{background-image:url('../assets/scenes/01-kingdom-gate.jpg')}
+.scene--walk{background-image:url('../assets/scenes/02-princess-arrival.jpg')}
+.scene--welcome{background-image:url('../assets/scenes/03-royal-welcome.jpg')}
+.scene--lulu{background-image:url('../assets/scenes/04-lulu-garden.jpg')}
+.scene--hall{background-image:url('../assets/scenes/05-coronation-hall.jpg')}
+.scene--crown{background-image:url('../assets/scenes/06-crowning.jpg')}
+.scene--letter{background-image:url('../assets/scenes/07-rital-portrait.jpg');background-position:center 30%}
+.scene--final{background-image:url('../assets/scenes/08-finale.jpg')}
+
+/* Replace the former CSS illustrations without removing the cinematic interface. */
+.scene--gate>:not(.scene-copy),.scene--walk>:not(.scene-copy),.scene--welcome>:not(.scene-copy),.scene--lulu>:not(.scene-copy),.scene--hall>:not(.scene-copy),.scene--crown>:not(.scene-copy),.scene--letter>:not(.letter),.scene--final>:not(.scene-copy){display:none}
+.scene-copy{padding:18px 21px;border-right:1px solid #f4cc7b88;background:linear-gradient(90deg,rgba(37,9,29,.58),rgba(37,9,29,.08));backdrop-filter:blur(2px);text-shadow:0 2px 12px #190716}
+.intro-copy{border-right:0;border-left:1px solid #f4cc7b88;background:linear-gradient(270deg,rgba(37,9,29,.58),rgba(37,9,29,.08))}
+.scene-copy--center{border:1px solid #f4cc7b66;border-radius:18px;background:rgba(37,9,29,.36)}
+.letter{background:linear-gradient(135deg,rgba(255,242,221,.94),rgba(248,213,197,.92))}
+@media(max-width:700px){.scene-copy{padding:12px 14px}.scene--letter{background-position:center}.scene--gate{background-position:56% center}.scene--lulu{background-position:60% center}}
